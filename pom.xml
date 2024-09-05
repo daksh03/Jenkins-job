@@ -26,6 +26,7 @@
 		<tag/>
 		<url/>
 	</scm>
+	<packaging>war</packaging>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
