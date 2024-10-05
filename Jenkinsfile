@@ -7,12 +7,11 @@ pipeline {
         maven 'Maven 3.x'  // Ensure this matches the Maven installation name in Jenkins
     }
 
-    // Remove or comment out the empty environment block
-    /*
+    
     environment {
-        // SONARQUBE_SERVER = 'MySonar'  // Replace with the name of your SonarQube server in Jenkins
+         SONARQUBE_SERVER = 'MySonar'  // Replace with the name of your SonarQube server in Jenkins
     }
-    */
+    
 
     stages {
         stage('Checkout') {
@@ -27,7 +26,7 @@ pipeline {
             }
         }
 
-        /* Commenting out the SonarQube stages
+        
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv(SONARQUBE_SERVER) {
@@ -46,6 +45,6 @@ pipeline {
                 }
             }
         }
-        */
+        
     }
 }
